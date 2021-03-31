@@ -11,7 +11,7 @@ def main():
     st.sidebar.write('''
              Get Equity Data
              ''')
-    names = pd.read_csv('/home/wbr/Desktop/PS/Assignments/assignment4/secwiki_tickers.csv')
+    names = pd.read_csv('secwiki_tickers.csv')
     names = names.dropna()
     c_date = date.today()
     ticker = st.sidebar.selectbox("Select Ticker", names['Ticker'].tolist())
